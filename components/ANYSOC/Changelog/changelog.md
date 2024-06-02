@@ -1,115 +1,127 @@
-## Surface Duo Drivers BSP - Version 2212.12
-**Released:** 12/4/2022 07:00 PM UTC+1
+## Surface Duo Drivers BSP - Version 2405.64 (Butterfly+)
+
+![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
+
+<details>
+  <summary>General information</summary>
+  <p>
+**Released:** 05/20/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
-![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/197420866-d3bb0534-c848-4cc2-a242-04dae48b0f6e.png)
-
-### General information
-
 You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Status.md
+  </p>
+</details>
 
+<details>
+  <summary>Important information</summary>
+  <p>
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.64.
+
+- ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
+
+- ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
+
+- ⚠️ You need to backup your original boot image for OTAs to work with Android. When you get an OTA, you will want to revert your boot image for the update to work, or you'll have to use an official OTA recovery package.
+  </p>
+</details>
+
+---
+
+[▶️ Install Surface Duo (1st Gen) UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo1.md)
+
+[▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
+
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.64)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+
+---
 
 ### Release notes
 
-____________________________________________________________________________________________________________________________
+- Resolves an issue that prevented Surface Duo 1 devices from booting correctly on clean installs since last update.
 
-#### Important information
+- Enables fetching of calibration data for the two display vertical alignment and feeds it to the TouchPenProcessor module at runtime.
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2212.12.** ⚠️⚠️
-- The issue affecting broken installations using Driver Updater has finally been fixed! Please make sure you download the latest version of driver updater released on 12/4/2022!
+- Enables fetching of the device calibration data for Bluetooth, WiFi, Cellular so things like MAC Addresses are now accurate for your device.
 
-### Changelog
+- Enables fetching of the sensor calibration data for all device sensors. Note: The sensors should be not only more accurate but also way more reactive after you take this update. In particular, Posture Changes may feel __too__ reactive to some degree. Improvements will come in a later update!
 
-#### Surface Duo 1
+---
 
-What's new?
+- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-![Screenshot (43)](https://user-images.githubusercontent.com/3755345/205504984-7d01670a-84fc-49e6-b33e-79dc15283f08.png)
+- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
-- Charging finally works under Windows! This is a first version of the charging stack, as a result a few things are currently limited. The charging input is limited to low current for safety measures while work is ongoing. Big thanks to @MollySophia for helping in this area!
+---
 
-![image](https://user-images.githubusercontent.com/3755345/205505394-8db8fba0-4ffd-49ad-a9df-82e33c58eae2.png)
+- We are aware auto pairing of the pen will not work anymore on Windows 10, a fix is due in the next update.
 
-- Adds a driver for the Qualcomm SMB1380 Secondary Charger
+<details>
+  <summary>Known issues</summary>
+  <p>
+- Installing Gallium Semester Insider builds may lead to a black screen on second boot of the OS, simply press the power button to continue.
 
-- Adds a driver for the Qualcomm PM8150B Fuel Gauge and Primary Charger
+- Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
 
-![CABL](https://user-images.githubusercontent.com/3755345/205505010-256dbac0-4db3-499e-9564-3d197f762ea2.png)
+- The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 
-- Enables Content Adaptive Brightness Level. For more information about CABL please see the following article: https://support.microsoft.com/en-us/windows/content-adaptive-brightness-control-in-windows-292d1f7f-9e02-4b37-a9c8-dab3e1727e78
+- The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 
-![image](https://user-images.githubusercontent.com/3755345/205505177-0f89352a-102b-4310-aa13-84d706d5baff.png)
+- Enhanced auto rotation is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 
-- Adds support for Duo's Pedometer Sensor.
+- Brightness control is glitchy on both displays.
 
-- Adds support for Duo's Light Fusion Sensor.
+- On device speakers are not functional.
 
-![New Tablet Experience FRE](https://user-images.githubusercontent.com/3755345/205505040-1bdaa28b-757b-4509-a002-5ceb5e00b0af.png)
+- Dongles are not detected correctly when plugged into the USB Type-C port.
 
-![Tablet Settings](https://user-images.githubusercontent.com/3755345/205505059-578f64ce-a9cd-4369-b10f-a05d959dbdc6.png)
+- Updating drivers may lead to weird configurations if done on old driver releases.
 
-![New Tablet Experience](https://user-images.githubusercontent.com/3755345/205505062-0d0de6d6-6c5e-448d-b5e8-fdd49983dd79.png)
+- MAC addresses do not reflect the real addresses asigned to the device.
 
-- The new Tablet Posture experience is now enabled for Surface Duo by default. Expect a more tablet optimized taskbar, bigger hit targets in Microsoft Edge/File Explorer, and more. For more information about tablet posture experiences, please visit the following link: https://blogs.windows.com/windows-insider/2022/02/24/announcing-windows-11-insider-preview-build-22563/
+- BitLocker drive encryption is not available.
 
-- Addresses a few issues with duplicated sensors.
+- USB dongles that are not externally powered may not currently work.
 
-- Enables smooth brightness control for both panels.
+- USB-C Billboard devices will not currently work.
 
-![MTP](https://user-images.githubusercontent.com/3755345/205505115-6bd15ae7-4271-4eae-a714-04fe8d739821.png)
+- External Display Stream support will not currently work.
 
-- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
+- Additional information provided by the posture sensor is currently not available for public consumption. This includes peek events.
 
-- Updates Surface Duo firmware to the latest Android OTA release of November
+- Digitizers will not react to the device being folded over.
 
-- Long forgotten bug fixes & enhancements
+- Displays will not react to the device being folded over most of the time.
 
-- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
+- Physical device data is incorrect.
 
-__Improvements to CPU core clock frequency will come in an upcoming release__
+- Digitizers aren't calibrated correctly.
 
-#### Surface Duo 2
+- Flipping the device is not smooth.
 
-- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
+- Users upgrading from releases older than the January ones may want to clean install again.
 
-- Updates Surface Duo 2 firmware to the latest Android OTA release of November
+- Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
 
-- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
+- In some cases, booting the UEFI image may lead to "static screen" effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes.
 
-### Sensor Calibration Provisioning (Mandatory)
+- Windows Recovery environment lacks drivers unless Windows has performed a Feature Update at least once.
 
+- sRGB is not available currently, and displays will not react to ICC profiles being applied.
+  </p>
+</details>
 
-In order to get most sensors currently working, some manual steps are required.
-Please follow the steps described at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows-SurfaceDuo1.md#temporary-and-optional-copy-over-calibration-filesconfiguration-files-for-the-sensors
+---
 
-
-It may also be possible to provision it using data from the SFPD partition exposed in windows. This manual step will not be required in future releases.
-
-
-### Known issues
-
-
-- Automatic Orientation only works for the left panel, using the right panel orientation sensor
-- USB Dongles that are not externally powered may not currently work
-- USB C Billboard devices will not currently work
-- External Display Stream support will not currently work
-- Additional information provided by the posture sensor is currently not available for public consumption, this includes peek events.
-- Digitizers will not react to the device being folded over
-- Displays will not react to the device being folded over most of the time
-- Physical device data is incorrect
-- Digitizers aren't calibrated correctly
-
-
-### Accessing Foldable Sensors from your applications
-
-
+<details>
+  <summary>Accessing Foldable Sensors from your applications</summary>
+  <p>
 In order to currently access the sensor data given by the foldable sensors, you need to use the following apis:
 
 
 - Windows.Devices.Sensors.HingeAngleSensor*
 - Windows.Internal.Devices.Sensors.FlipSensor* (2)
-- Windows.Internal.System.TwoPanelHingeFolioPostureDevice* (2)
+- Windows.Internal.System.TwoPanelHingePostureDevice* (2)
 
 
 (2): These apis require the use of an externally sourced winmd available from https://github.com/ADeltaX/InternalWinMD/blob/master/%23winmd/Windows.Internal.Devices.Sensors.winmd
@@ -196,7 +208,7 @@ VOID OnFoldSensorReadingChanged(FoldSensor const&, FoldSensorReadingChangedEvent
 	catch (...) {}
 }
 
-VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
+VOID PrintDetails(TwoPanelHingedDevicePostureReading const& args)
 {
 	try {
 		std::cout << "Panel1 " << args.Panel1Id().c_str() << "\n" << std::endl;
@@ -205,7 +217,7 @@ VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
 		std::cout << "Panel1 Orientation " << (int)args.Panel1Orientation() << "\n" << std::endl;
 		std::cout << "Panel2 Orientation " << (int)args.Panel2Orientation() << "\n" << std::endl;
 
-		switch (args.Hinge1State())
+		switch (args.HingeState())
 		{
 		case Windows::Internal::System::HingeState::Unknown:
 			std::cout << "Hinge1State Unknown\n" << std::endl;
@@ -226,37 +238,15 @@ VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
 			std::cout << "Hinge1State Full\n" << std::endl;
 			break;
 		}
-
-		switch (args.Hinge2State())
-		{
-		case Windows::Internal::System::HingeState::Unknown:
-			std::cout << "Hinge2State Unknown\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Closed:
-			std::cout << "Hinge2State Closed\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Concave:
-			std::cout << "Hinge2State Concave\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Flat:
-			std::cout << "Hinge2State Flat\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Convex:
-			std::cout << "Hinge2State Convex\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Full:
-			std::cout << "Hinge2State Full\n" << std::endl;
-			break;
-		}
 	}
 	catch (...) {}
 }
 
-VOID OnFolioPostureChanged(TwoPanelFolioHingeDevicePosture const&, TwoPanelFolioHingeDevicePostureReadingChangedEventArgs const& args)
+VOID OnPostureChanged(TwoPanelHingedDevicePosture const&, TwoPanelHingedDevicePostureReadingChangedEventArgs const& args)
 {
 	try {
-		printf("Folio posture sensor state changed.\n");
-		PrintFolioDetails(args.Reading());
+		printf("Posture sensor state changed.\n");
+		PrintDetails(args.Reading());
 	}
 	catch (...) {}
 }
@@ -304,22 +294,22 @@ int main()
 	}
 	catch (...) {}
 
-	printf("Trying to get folio posture sensor.\n");
+	printf("Trying to get posture sensor.\n");
 	try {
-		TwoPanelFolioHingeDevicePosture folioPosture = TwoPanelFolioHingeDevicePosture::GetDefaultAsync().get();
-		if (folioPosture == nullptr)
+		TwoPanelHingedDevicePosture Posture = TwoPanelHingedDevicePosture::GetDefaultAsync().get();
+		if (Posture == nullptr)
 		{
-			printf("Folio Posture sensor not found.\n");
+			printf("Posture sensor not found.\n");
 		}
 		else
 		{
-			auto curpst = folioPosture.GetCurrentPostureAsync().get();
+			auto curpst = Posture.GetCurrentPostureAsync().get();
 			if (curpst != nullptr)
 			{
-				PrintFolioDetails(curpst);
+				PrintDetails(curpst);
 			}
-			printf("Starting listening session for Folio Posture sensor.\n");
-			folioPosture.PostureChanged(OnFolioPostureChanged);
+			printf("Starting listening session for Posture sensor.\n");
+			Posture.PostureChanged(OnPostureChanged);
 		}
 		printf("Press any key to stop\n");
 		std::cin.get();
@@ -344,38 +334,32 @@ int main()
 	catch (...) {}
 }
 ```
+  </p>
+</details>
 
-____________________________________________________________________________________________________________________________
+<details>
+  <summary>How to offline update an existing Windows Desktop installation</summary>
+  <p>
+Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md
+  </p>
+</details>
 
+<details>
+  <summary>How to install Windows Desktop on internal Storage</summary>
+  <p>
+Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides
+  </p>
+</details>
 
-How to offline update an existing Windows Desktop installation
-
-- Switch the device into mass storage.
-- Take note of the drive letter the Windows partition is using, here we will assume it got mounted as I:
-
-- Download [SurfaceDuo-Drivers-Full.zip] from https://github.com/WOA-Project/SurfaceDuo-Drivers/releases/latest
-- Extract said zip file to a folder of your choice, we will assume here we extracted it to C:\UpdatedDrivers
-- Download the DriverUpdater utility from https://github.com/WOA-Project/DriverUpdater/releases/latest
-- Open a command prompt as administrator, where the driver utility got downloaded
-
-- Execute the following command:
-  
-  DriverUpdater.exe -d C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\definitions\Desktop\ARM64\Internal\epsilon.txt -r C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\ -p I:\
-
-- Reboot the device, the device will now begin PnP setup once again, and hopefully you will be back soon enough to your desktop
-
-____________________________________________________________________________________________________________________________
-
-
-How to install Windows Desktop on internal Storage
-
-- Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides
-
-____________________________________________________________________________________________________________________________
-
-
-### Bug reporting
-
+<details>
+  <summary>Bug reporting</summary>
+  <p>
 This release is a Preview release. Bug exists and may happen. If you notice a bug not present in the following bug list, please report them on our Telegram Group.
+  </p>
+</details>
 
--- WOA-Project Team
+---
+
+Seems Faster(TM)
+
+-- The DuoWoA authors
