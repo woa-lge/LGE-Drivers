@@ -1,0 +1,89 @@
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+    <Drivers>
+        <BaseDriverPackages>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Settings\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" ID="desktopsignature"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Signature\SSDE" Name="ssde.inf" ID="ssde"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\sTPM" Name="mismptf.inf" ID="mismptf"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\UsbNcmFn" Name="UsbNcmFn.inf" ID="UsbNcmFn"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Services\MTP" Name="MTPDesktop.inf" ID="MTPDesktop"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\Bluetooth" Name="bthdefaults.inf" ID="bthdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\USBFn" Name="usbdefaults.inf" ID="usbdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM_MINIMAL\Drivers\SOC\TrEE" Name="QcTrEE850.inf" ID="QcTrEE850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Drivers\Bluetooth" Name="qcbtfmuart850.inf" ID="qcbtfmuart850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Drivers\Cellular\IPA" Name="qcipa850.inf" ID="qcipa850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Drivers\Sensors" Name="qcSensors850.inf" ID="qcSensors850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Drivers\WLAN" Name="qcwlan850.inf" ID="qcwlan850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Extensions\Bluetooth" Name="qcbtfmuart_ext850.inf" ID="qcbtfmuart_ext850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Extensions\HexagonLoader" Name="qcpil850.inf" ID="qcpil850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Extensions\Subsystems" Name="mcfg_subsys_ext850.inf" ID="mcfg_subsys_ext850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Extensions\Subsystems\ADSP" Name="qcsubsys_extension850.inf" ID="qcsubsys_extension850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Device\DEVICE.SOC_SDM845.CAYMANSLM\Settings" Name="oled.inf" ID="oled"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Graphics\GRAPHICS.SOC_SDM845.CAYMANSLM_DESKTOP" Name="qcdx850.inf" ID="qcdx850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer850.inf" ID="HalExtQCWdogTimer850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd850.inf" ID="qcabd850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\BUS" Name="qcgpi8180.inf" ID="qcgpi8180"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\BUS" Name="qci2c850.inf" ID="qci2c850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\BUS" Name="qcspi850.inf" ID="qcspi850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\BUS" Name="qcuart850.inf" ID="qcuart850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\Cellular\IPA" Name="qcgsi850.inf" ID="qcgsi850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\Cellular\IPCRouter" Name="qcipcrouter850.inf" ID="qcipcrouter850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\GLINK" Name="qcglink850.inf" ID="qcglink850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\GPIO" Name="qcgpio850.inf" ID="qcgpio850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\IOMMU" Name="qciommu850.inf" ID="qciommu850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic850.inf" ID="qcpmic850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicapps850.inf" ID="qcpmicapps850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio850.inf" ID="qcpmicgpio850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmictcc850.inf" ID="qcpmictcc850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi850.inf" ID="qccdi850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qcrpen850.inf" ID="qcrpen850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\RNG" Name="qcRng850.inf" ID="qcRng850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\SMMU" Name="qcsmmu850.inf" ID="qcsmmu850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\SPMI" Name="qcspmi850.inf" ID="qcspmi850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\System" Name="qckmbam850.inf" ID="qckmbam850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\System" Name="qcscm850.inf" ID="qcscm850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\System" Name="qcsyscache850.inf" ID="qcsyscache850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\Transports" Name="QcTftpKmdf850.inf" ID="QcTftpKmdf850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\USB\USBC" Name="qcusbc850.inf" ID="qcusbc850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\USB\XhciFilter" Name="QcXhciFilter850.inf" ID="QcXhciFilter850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc850.inf" ID="qcadc850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpc850.inf" ID="qcadsprpc850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Battery" Name="qcbattminiclass850.inf" ID="qcbattminiclass850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Battery" Name="qcbattmngr850.inf" ID="qcbattmngr850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Battery" Name="qcfgbcl850.inf" ID="qcfgbcl850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry850.inf" ID="qcbtaddvscregistry850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\Databus" Name="qcdatabus850.inf" ID="qcdatabus850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\DiagBridge" Name="QCDiagBridge850.inf" ID="QCDiagBridge850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\DiagCSI" Name="qcdiagcsi850.inf" ID="qcdiagcsi850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\DiagRouter" Name="qcdiagrouter850.inf" ID="qcdiagrouter850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\DplBridge" Name="qcdplbridge850.inf" ID="qcdplbridge850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\Linklocal" Name="qclinklocal.wp850.inf" ID="qclinklocal.wp850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\LteCoexistanceManager" Name="QcLteCoexMgr850.inf" ID="QcLteCoexMgr850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\MBB" Name="qcmbb850.inf" ID="qcmbb850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\MBRG" Name="qcmbrg850.inf" ID="qcmbrg850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\RemoteAt" Name="qcremoteat850.inf" ID="qcremoteat850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\RemoteFS" Name="qcremotefs850.inf" ID="qcremotefs850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\revrmnet" Name="qcrevrmnet850.inf" ID="qcrevrmnet850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Cellular\RmnetBridge" Name="qcrmnetbridge850.inf" ID="qcrmnetbridge850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\GPS" Name="qcgnss850.inf" ID="qcgnss850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\SAR" Name="qSarMgr850.inf" ID="qSarMgr850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Shutdown" Name="qcshutdownsvc850.inf" ID="qcshutdownsvc850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Drivers\Subsystems" Name="qcpdsr850.inf" ID="qcpdsr850"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\SDM845\Platform\PLATFORM.SOC_SDM845.BASE\Source\Extensions\PowerManagement" Name="qcpep.wd850.inf" ID="qcpep.wd850"/>
+        </BaseDriverPackages>
+    </Drivers>
+    <AppX>
+        <AppXPackages>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.2.2.appx" ID="Microsoft.NET.Native.Framework.2.2"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.x64.1.3.Appx" ID="Microsoft.NET.Native.Framework.x64.1.3"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.2.2.appx" ID="Microsoft.NET.Native.Runtime.2.2"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.4.Appx" ID="Microsoft.NET.Native.Runtime.x64.1.4"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.UI.Xaml.2.8.appx" ID="Microsoft.UI.Xaml.2.8"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM.140.00.appx" ID="Microsoft.VCLibs.ARM.140.00"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.appx" ID="Microsoft.VCLibs.ARM64.14.00"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.Desktop.appx" ID="Microsoft.VCLibs.ARM64.14.00.Desktop"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.x64.14.00.appx" ID="Microsoft.VCLibs.x64.14.00"/>
+        </AppXPackages>
+    </AppX>
+</FeatureManifest>
