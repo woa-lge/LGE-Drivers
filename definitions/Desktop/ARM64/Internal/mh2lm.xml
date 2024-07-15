@@ -30,7 +30,7 @@
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Bluetooth" Name="G8X_btfmuart.inf" ID="G8X_btfmuart"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Cellular" Name="g8x_ipa.inf" ID="g8x_ipa"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
-			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Sensors" Name="qcsensorsconfig8150.inf" ID="qcsensorsconfig8150"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Sensors\SSC" Name="G8X_sensors.inf" ID="G8X_sensors"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\WLAN" Name="g8x_wlan.inf" ID="g8x_wlan"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Audio\ACDB" Name="G8X_acsp.inf" ID="G8X_acsp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Audio\AudMiniport" Name="G8X_audminiext.inf" ID="G8X_audminiext"/>
@@ -40,6 +40,7 @@
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\HexagonLoader" Name="G8X_pilext.inf" ID="G8X_pilext"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Subsystems" Name="G8X_mcfg.inf" ID="G8X_mcfg"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Sensors" Name="g8x_sensorsconfig8150.inf" ID="g8x_sensorsconfig8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Subsystems" Name="G8X_subextadsp.inf" ID="G8X_subextadsp"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Subsystems" Name="G8X_subextcdsp.inf" ID="G8X_subextcdsp"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Extensions\Subsystems" Name="G8X_subextmpss.inf" ID="G8X_subextmpss"/>
@@ -117,7 +118,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\GPS" Name="qcgnss8150.inf" ID="qcgnss8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Graphics" Name="qdcmlib8150.inf" ID="qdcmlib8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\SAR" Name="qSarMgr8150.inf" ID="qSarMgr8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Sensors\SSC" Name="qcSensors8150.inf" ID="qcSensors8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Shutdown" Name="qcshutdownsvc.inf" ID="qcshutdownsvc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Subsystems" Name="qcconnectionsecurity8150.inf" ID="qcconnectionsecurity8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Subsystems" Name="qcpdsr.inf" ID="qcpdsr"/>
