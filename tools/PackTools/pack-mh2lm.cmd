@@ -35,7 +35,7 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> file
 echo components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM >> filelist_mh2lm.txt
 echo components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM_MINIMAL >> filelist_mh2lm.txt
 echo components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MH2LM_DESKTOP >> filelist_mh2lm.txt
-echo components\QC8150\OEM\OEM.SOC_QC8150.MH2LM >> filelist_mh2lm.txt
+echo components\QC8150\OEM\OEM.SOC_QC8150.LG >> filelist_mh2lm.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_mh2lm.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_mh2lm.txt
 echo definitions\Desktop\ARM64\Internal\mh2lm.xml >> filelist_mh2lm.txt
