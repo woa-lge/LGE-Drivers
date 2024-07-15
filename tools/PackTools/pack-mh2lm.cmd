@@ -1,6 +1,8 @@
 @echo off
-rmdir /Q /S ..\..\LGE-Drivers-Release
+cd ..\.
+
 mkdir ..\..\LGE-Drivers-Release
+del ..\..\LGE-Drivers-Release\mh2lm-Drivers-Desktop.7z
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -21,6 +23,7 @@ echo if not "%%DrivePath:~1,1%%"==":" set DrivePath=%%DrivePath%%:>> ..\OfflineU
 echo :start >> ..\OfflineUpdater.cmd
 echo if not exist "%%DrivePath%%\Windows\" echo Error! Selected Disk "%%DrivePath%%" doesn't have any Windows installation. ^& pause ^& exit >> ..\OfflineUpdater.cmd
 echo .\tools\DriverUpdater\%%PROCESSOR_ARCHITECTURE%%\DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\mh2lm.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo pause >> ..\OfflineUpdater.cmd
 
 echo apps\IPA > filelist_mh2lm.txt
 echo CODE_OF_CONDUCT.md >> filelist_mh2lm.txt
