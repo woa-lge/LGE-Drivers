@@ -24,9 +24,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Audio\AudMiniport" Name="G8X_audmini.inf" ID="G8X_audmini"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Audio\cs35l41" Name="cs35l41.inf" ID="cs35l41"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Audio\Device" Name="qcauddev8150.inf" ID="qcauddev8150"/>
-			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Battery" Name="qcfgbcl8150.inf" ID="qcfgbcl8150"/>
-			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Battery" Name="qcbattminiclass8150.inf" ID="qcbattminiclass8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Battery" Name="qcbattmngr8150.inf" ID="qcbattmngr8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Bluetooth" Name="G8X_btfmuart.inf" ID="G8X_btfmuart"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Cellular" Name="g8x_ipa.inf" ID="g8x_ipa"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
@@ -52,6 +49,9 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM\Settings" Name="g8x_DeviceInfo.inf" ID="g8x_DeviceInfo"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MH2LM_DESKTOP" Name="G8X_dx.inf" ID="G8X_dx"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Drivers\Battery" Name="qcfgbcl8150.inf" ID="qcfgbcl8150"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Drivers\Battery" Name="qcbattminiclass8150.inf" ID="qcbattminiclass8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Drivers\Battery" Name="qcbattmngr8150.inf" ID="qcbattmngr8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Drivers\Graphics" Name="GenericDcsBacklight.inf" ID="GenericDcsBacklight"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Drivers\Touch" Name="SynapticsTouchTcm.inf" ID="SynapticsTouchTcm"/>			
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.LG\Settings" Name="oled.inf" ID="oled"/>

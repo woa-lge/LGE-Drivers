@@ -29,6 +29,7 @@ echo apps\IPA > filelist_mh2lm.txt
 echo CODE_OF_CONDUCT.md >> filelist_mh2lm.txt
 echo components\ANYSOC\Changelog >> filelist_mh2lm.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE >> filelist_mh2lm.txt
+echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist_mh2lm.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS >> filelist_mh2lm.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_mh2lm.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_mh2lm.txt
