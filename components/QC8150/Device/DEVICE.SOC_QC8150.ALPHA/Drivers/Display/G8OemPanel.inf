@@ -1,0 +1,56 @@
+;
+; G8OemPanel.inf
+;
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %ManufacturerName%
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Class       = System
+DriverVer = 11/28/2022,17.34.51.105
+CatalogFile = G8OemPanel.cat
+PnpLockdown = 1
+
+[Manufacturer]
+%ManufacturerName% = Surface, NTARM64
+
+[Surface.NTARM64]
+%DeviceName% = G8OemPanel, ACPI\OPLG0800
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+G8OemPanel.sys  = 1
+
+[DestinationDirs]
+OEMCopyFiles = 13
+
+[G8OemPanel.NT]
+CopyFiles = OEMCopyFiles
+
+[OEMCopyFiles]
+G8OemPanel.sys
+
+[G8OemPanel.NT.Services]
+AddService = G8OemPanel, %SPSVCINST_ASSOCSERVICE%, G8OemPanel_Service_Inst
+
+[G8OemPanel_Service_Inst]
+DisplayName    = %SvcDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %13%\G8OemPanel.sys
+LoadOrderGroup = Extended Base
+
+[Strings]
+ManufacturerName = "G8"
+DiskName         = "G8 OEM Panel Installation Disk"
+DeviceName       = "G8 OEM Panel Device"
+SvcDesc          = "G8 OEM Panel Device"
+
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_IGNORE   = 0
+SERVICE_ERROR_NORMAL   = 1
