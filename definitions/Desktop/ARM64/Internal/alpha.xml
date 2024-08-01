@@ -34,7 +34,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\BatteryCurrentLimiter" Name="qcfgbclext8150.inf" ID="qcfgbclext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\Bluetooth" Name="g8_btext.inf" ID="g8_btext"/>
        		<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
-			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\HexagonLoader" Name="g8_pilext.inf" ID="g8_pilext"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\HexagonLoader" Name="G8_pilext.inf" ID="G8_pilext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\Subsystems" Name="g8_mcfg.inf" ID="g8_mcfg"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\Subsystems" Name="g8_subextadsp.inf" ID="g8_subextadsp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.ALPHA\Extensions\Subsystems" Name="g8_subextmpss.inf" ID="g8_subextmpss"/>

@@ -33,7 +33,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\BatteryCurrentLimiter" Name="qcfgbclext8150.inf" ID="qcfgbclext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\Bluetooth" Name="qcbtfmuart_ext8150.inf" ID="qcbtfmuart_ext8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
-			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\HexagonLoader" Name="qcpilEXT8150.inf" ID="qcpilEXT8150"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\HexagonLoader" Name="V50S_pilext.inf" ID="V50S_pilext"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\Subsystems" Name="V50S_mcfg.inf" ID="V50S_mcfg"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\Sensors" Name="V50S_sensorsconfig8150.inf" ID="V50S_sensorsconfig8150"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MH2LM5G\Extensions\Subsystems" Name="qcsubsys_ext_adsp8150.inf" ID="qcsubsys_ext_adsp8150"/>
