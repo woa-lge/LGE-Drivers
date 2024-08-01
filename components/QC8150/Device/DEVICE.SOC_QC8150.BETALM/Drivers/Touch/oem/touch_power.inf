@@ -1,0 +1,94 @@
+[Version]
+Signature = "$Windows NT$"
+Class     = HIDClass
+ClassGuid = {745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
+Provider  = %MMO%
+DriverVer = 03/18/2021,1.2.0.0
+PnpLockdown = 1
+
+CatalogFile.NTarm   = touch_power.arm.cat
+CatalogFile.NTarm64 = touch_power.arm64.cat
+
+[DestinationDirs]
+Drivers_Dir_A32 = 13,arm
+Drivers_Dir_A64 = 13,arm64
+
+[SourceDisksNames]
+1 = %Installation_Disk%,,,""
+
+[SourceDisksFiles.ARM]
+touch_power.sys  = 1,arm,
+
+[SourceDisksFiles.ARM64]
+touch_power.sys  = 1,arm64,
+
+[Manufacturer]
+%Manufacturer_Name% = Standard,NTarm,NTarm64
+
+[Standard.NTarm]
+%touch_power.DeviceDesc% = touch_power_Device, ACPI\MSHW1024
+
+[Standard.NTarm64]
+%touch_power.DeviceDesc% = touch_power_Device, ACPI\MSHW1024
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[touch_power_Device.NTarm]
+CopyFiles = Drivers_Dir_A32
+
+[touch_power_Device.NTarm64]
+CopyFiles = Drivers_Dir_A64
+
+[Drivers_Dir_A32]
+touch_power.sys,,,0x100
+
+[Drivers_Dir_A64]
+touch_power.sys,,,0x100
+
+;-------------- Service installation
+[touch_power_Device.NTarm.Services]
+AddService = %touch_power_service%,%SPSVCINST_ASSOCSERVICE%, touch_power_Service_Inst
+
+[touch_power_Device.NTarm64.Services]
+AddService = %touch_power_service%,%SPSVCINST_ASSOCSERVICE%, touch_power_Service_Inst.NTarm64
+
+; -------------- touch_power driver install sections
+[touch_power_Service_Inst]
+DisplayName    = %touch_power.SvcDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\arm\touch_power.sys
+LoadOrderGroup = Base
+
+[touch_power_Service_Inst.NTarm64]
+DisplayName    = %touch_power.SvcDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\arm64\touch_power.sys
+LoadOrderGroup = Base
+
+;
+;--- touch_power_Device Coinstaller installation ------
+;
+[touch_power_Device.NTarm.Wdf]
+KmdfService =  touch_power, touch_power_wdfsect
+
+[touch_power_Device.NTarm64.Wdf]
+KmdfService =  touch_power, touch_power_wdfsect
+
+[touch_power_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+MMO                    = "MMO"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+Installation_Disk      = "Microsoft Mobile Digitizer Power Gater Installation Disk"
+Manufacturer_Name      = "Microsoft Mobile Oy"
+DiskName               = "Microsoft Mobile Digitizer Power Gater Installation Disk"
+touch_power.DeviceDesc = "Microsoft Mobile Digitizer Power Gater"
+touch_power.SvcDesc    = "Microsoft Mobile Digitizer Power Gater Driver"
+touch_power_service    = "touch_power"

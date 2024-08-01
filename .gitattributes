@@ -5,3 +5,4 @@ components/QC8150/Graphics/GRAPHICS.SOC_QC8150.FLASHLMDD_DESKTOP/qcdxwsaum.img f
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.MH2LM5G_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.MH2LM_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.ALPHA_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
+components/QC8150/Graphics/GRAPHICS.SOC_QC8150.BETALM_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
