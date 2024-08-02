@@ -1,0 +1,78 @@
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+    <Drivers>
+        <BaseDriverPackages>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" ID="desktopsignature"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Signature\SSDE" Name="ssde.inf" ID="ssde"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\FMRadio" Name="FM Radio Interface.inf" ID="FM Radio Interface"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\MobileBridge" Name="MobileFrequencyModulationService.inf" ID="MobileFrequencyModulationService"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" ID="MobileHapticsService"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\sTPM" Name="mismptf.inf" ID="mismptf"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\UsbNcmFn" Name="UsbNcmFn.inf" ID="UsbNcmFn"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Services\MTP" Name="MTPDesktop.inf" ID="MTPDesktop"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\Bluetooth" Name="bthdefaults.inf" ID="bthdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\USBFn" Name="usbdefaults.inf" ID="usbdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS\EMBDeviceMetadata" Name="EMBDeviceMetadata.inf" ID="EMBDeviceMetadata"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\AudioCoreExt" Name="AudioCoreExt.inf" ID="AudioCoreExt"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\EMB" Name="emb.inf" ID="emb"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN_MINIMAL\Drivers\SOC\TrEE" Name="QcTrEE8998.inf" ID="QcTrEE8998"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN\Drivers\Bluetooth" Name="qcbtfmuart8998.inf" ID="qcbtfmuart8998"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN\Drivers\Bluetooth" Name="qcbtfmuart_ext8998.inf" ID="qcbtfmuart_ext8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN\Drivers\WLAN" Name="qcwlan_wd8998.inf" ID="qcwlan_wd8998"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN\Extensions\HexagonLoader" Name="qcpil8998.inf" ID="qcpil8998"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Device\DEVICE.SOC_MSM8998.JOAN\Settings" Name="oled.inf" ID="oled"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Graphics\GRAPHICS.SOC_MSM8998.JOAN_DESKTOP" Name="qcdx8998.inf" ID="qcdx8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer8998.inf" ID="HalExtQCWdogTimer8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd8998.inf" ID="qcabd8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\BUS" Name="qcgpio8998.inf" ID="qcgpio8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\BUS" Name="qci2c8998.inf" ID="qci2c8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\BUS" Name="qcuart8998.inf" ID="qcuart8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\Cellular\IPA" Name="qcgsi8998.inf" ID="qcgsi8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\Cellular\IPCRouter" Name="qcipcrouter_WP8998.inf" ID="qcipcrouter_WP8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic8998.inf" ID="qcpmic8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicApps8998.inf" ID="QcPmicApps8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio8998.inf" ID="qcpmicgpio8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic8998.inf" ID="qcpmic8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicApps8998.inf" ID="QcPmicApps8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio8998.inf" ID="qcpmicgpio8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi8998.inf" ID="qccdi8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qcrpen8998.inf" ID="qcrpen8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\SMMU" Name="qcsmmu8998.inf" ID="qcsmmu8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\SPMI" Name="qcspmi8998.inf" ID="qcspmi8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\System" Name="qckmbam8998.inf" ID="qckmbam8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\System" Name="qcscm8998.inf" ID="qcscm8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\Transports" Name="QcTftpKmdf8998.inf" ID="QcTftpKmdf8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\USB\USBC" Name="qcusbc8998.inf" ID="qcusbc8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\USB\XhciFilter" Name="QcXhciFilter8998.inf" ID="QcXhciFilter8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8998.inf" ID="qcadc8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\DiagBridge" Name="QCDiagBridge8998.inf" ID="QCDiagBridge8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\DiagCSI" Name="qcdiagcsi8998.inf" ID="qcdiagcsi8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\DiagRouter" Name="qcdiagrouter8998.inf" ID="qcdiagrouter8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\DplBridge" Name="qcdplbridge8998.inf" ID="qcdplbridge8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\MBB" Name="qcgsi8150.inf" ID="qcmbb8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\MBRG" Name="qcmbrg8998.inf" ID="qcmbrg8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\RemoteAt" Name="qcremoteat8998.inf" ID="qcremoteat8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\RemoteFS" Name="qcremotefs8998.inf" ID="qcremotefs8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Cellular\RmNetBridge" Name="qcrmnetbridge8998.inf" ID="qcrmnetbridge8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\GPS" Name="qcgnss8998.inf" ID="qcgnss8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Shutdown" Name="qcshutdownsvc8998.inf" ID="qcshutdownsvc8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Subsystems" Name="qcpdsr8998.inf" ID="qcpdsr8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Drivers\Subsystems" Name="qcsubsys8998.inf" ID="qcsubsys8998"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\MSM8998\Platform\PLATFORM.SOC_MSM8998.BASE\Source\Extensions\PowerManagement" Name="qcpep.wd8998.inf" ID="qcpep.wd8998"/>
+        </BaseDriverPackages>
+    </Drivers>
+    <AppX>
+        <AppXPackages>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.2.2.appx" ID="Microsoft.NET.Native.Framework.2.2"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.x64.1.3.Appx" ID="Microsoft.NET.Native.Framework.x64.1.3"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.2.2.appx" ID="Microsoft.NET.Native.Runtime.2.2"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.4.Appx" ID="Microsoft.NET.Native.Runtime.x64.1.4"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.UI.Xaml.2.8.appx" ID="Microsoft.UI.Xaml.2.8"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM.140.00.appx" ID="Microsoft.VCLibs.ARM.140.00"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.appx" ID="Microsoft.VCLibs.ARM64.14.00"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.Desktop.appx" ID="Microsoft.VCLibs.ARM64.14.00.Desktop"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.x64.14.00.appx" ID="Microsoft.VCLibs.x64.14.00"/>
+        </AppXPackages>
+    </AppX>
+</FeatureManifest>
